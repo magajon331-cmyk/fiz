@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VOLT X — Energy Unleashed</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CURSOR GLOW -->
+    <div id="cursorGlow"></div>
+
+    <!-- PARTICLES -->
+    <div class="particles" id="particles"></div>
+
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <a href="#home" class="brand">
+            VOLT<span>X</span>
+        </a>
+
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#flavors">FLAVORS</a>
+            <a href="#inside">INSIDE</a>
+        </nav>
+
+        <button class="cart-btn" onclick="openCart()">
+
+            <span>🛒</span>
+
+            <b id="cartCount">0</b>
+
+        </button>
+
+    </header>
+
+
+
+    <!-- HERO -->
+
+    <main id="home">
+
+        <section class="hero">
+
+            <!-- LEFT -->
+
+            <div class="hero-content">
+
+                <div class="eyebrow">
+                    <span></span>
+                    NEXT LEVEL ENERGY
+                </div>
+
+                <h1>
+
+                    UNLEASH
+                    <strong>YOUR</strong>
+                    <em>VOLT.</em>
+
+                </h1>
+
+                <p class="hero-description">
+
+                    Нӯшокии энергетикии насли нав.
+                    Таъм, энергия ва дизайне, ки барои одамони
+                    оддӣ сохта нашудааст.
+
+                </p>
+
+
+                <!-- ENERGY METER -->
+
+                <div class="energy-box">
+
+                    <div class="energy-top">
+
+                        <span>ENERGY LEVEL</span>
+
+                        <strong id="energyNumber">
+                            92%
+                        </strong>
+
+                    </div>
+
+                    <div class="energy-bar">
+
+                        <div id="energyFill"></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BUTTONS -->
+
+                <div class="hero-buttons">
+
+                    <button
+                        class="primary-btn"
+                        onclick="addToCart('VOLT X Neon Lime', 3.50)"
+                    >
+
+                        CHARGE ME
+                        <span>⚡</span>
+
+                    </button>
+
+                    <button
+                        class="secondary-btn"
+                        onclick="showInside()"
+                    >
+
+                        WHAT'S INSIDE?
+
+                    </button>
+
+                </div>
+
+
+                <!-- MINI STATS -->
+
+                <div class="mini-stats">
+
+                    <div>
+
+                        <strong>330</strong>
+
+                        <span>ML</span>
+
+                    </div>
+
+                    <div>
+
+                        <strong>160</strong>
+
+                        <span>MG CAFFEINE</span>
+
+                    </div>
+
+                    <div>
+
+                        <strong>0</strong>
+
+                        <span>CRASH</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CAN -->
+
+            <div class="product-stage">
+
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+
+                <div class="stage-text">
+                    DRAG TO ROTATE
+                </div>
+
+
+                <!-- CAN -->
+
+                <div
+                    class="can-wrapper"
+                    id="canWrapper"
+                >
+
+                    <div
+                        class="can"
+                        id="mainCan"
+                    >
+
+                        <!-- FRONT -->
+
+                        <div class="can-side front">
+
+                            <div class="can-shine"></div>
+
+                            <div class="can-brand">
+                                VOLT
+                                <small>X</small>
+                            </div>
+
+                            <div class="bolt">
+                                ⚡
+                            </div>
+
+                            <div class="flavor-label">
+                                NEON LIME
+                            </div>
+
+                            <div class="can-bottom-text">
+                                ENERGY DRINK
+                            </div>
+
+                            <div class="volume">
+                                330 ML
+                            </div>
+
+                        </div>
+
+
+                        <!-- BACK -->
+
+                        <div class="can-side back">
+
+                            <div class="back-logo">
+                                VOLT X
+                            </div>
+
+                            <div class="back-title">
+                                WHAT'S INSIDE
+                            </div>
+
+                            <div class="ingredients">
+
+                                <div>
+                                    <b>01</b>
+                                    Carbonated Water
+                                </div>
+
+                                <div>
+                                    <b>02</b>
+                                    Caffeine
+                                </div>
+
+                                <div>
+                                    <b>03</b>
+                                    Taurine
+                                </div>
+
+                                <div>
+                                    <b>04</b>
+                                    B Vitamins
+                                </div>
+
+                                <div>
+                                    <b>05</b>
+                                    Natural Flavors
+                                </div>
+
+                            </div>
+
+                            <div class="nutrition-row">
+
+                                <div>
+                                    <b>160</b>
+                                    <small>CAFFEINE</small>
+                                </div>
+
+                                <div>
+                                    <b>330</b>
+                                    <small>ML</small>
+                                </div>
+
+                                <div>
+                                    <b>0</b>
+                                    <small>SUGAR*</small>
+                                </div>
+
+                            </div>
+
+                            <div class="barcode">
+                                ||| || |||| | ||| ||||
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FLOATING LABELS -->
+
+                <div class="floating-card card-one">
+
+                    <span>⚡</span>
+
+                    <div>
+                        <small>POWER</small>
+                        <strong>+92%</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="floating-card card-two">
+
+                    <span>❄</span>
+
+                    <div>
+                        <small>TASTE</small>
+                        <strong>ULTRA</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- RUNNING TEXT -->
+
+        <div class="ticker">
+
+            <div>
+
+                VOLT X ⚡ NO LIMITS ⚡ FULL POWER ⚡
+                STAY CHARGED ⚡ VOLT X ⚡ NO LIMITS ⚡
+                FULL POWER ⚡ STAY CHARGED ⚡
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FLAVORS -->
+
+        <section
+            class="flavors"
+            id="flavors"
+        >
+
+            <div class="section-heading">
+
+                <span>SELECT YOUR MODE</span>
+
+                <h2>
+                    PICK YOUR
+                    <b>VOLT.</b>
+                </h2>
+
+            </div>
+
+
+            <div class="flavor-grid">
+
+
+                <article
+                    class="flavor-card active"
+                    data-theme="lime"
+                    onclick="selectFlavor('lime')"
+                >
+
+                    <div class="mini-can lime-can">
+
+                        <div>
+                            VOLT<small>X</small>
+                        </div>
+
+                        <span>⚡</span>
+
+                        <small>NEON LIME</small>
+
+                    </div>
+
+                    <div class="flavor-info">
+
+                        <span>01</span>
+
+                        <h3>
+                            NEON LIME
+                        </h3>
+
+                        <p>
+                            Citrus. Cold. Electric.
+                        </p>
+
+                        <strong>
+                            $3.50
+                        </strong>
+
+                    </div>
+
+                    <button
+                        onclick="event.stopPropagation(); addToCart('VOLT X Neon Lime', 3.50)"
+                    >
+                        +
+                    </button>
+
+                </article>
+
+
+
+                <article
+                    class="flavor-card"
+                    data-theme="berry"
+                    onclick="selectFlavor('berry')"
+                >
+
+                    <div class="mini-can berry-can">
+
+                        <div>
+                            VOLT<small>X</small>
+                        </div>
+
+                        <span>⚡</span>
+
+                        <small>CYBER BERRY</small>
+
+                    </div>
+
+                    <div class="flavor-info">
+
+                        <span>02</span>
+
+                        <h3>
+                            CYBER BERRY
+                        </h3>
+
+                        <p>
+                            Sweet. Dark. Explosive.
+                        </p>
+
+                        <strong>
+                            $3.70
+                        </strong>
+
+                    </div>
+
+                    <button
+                        onclick="event.stopPropagation(); addToCart('VOLT X Cyber Berry', 3.70)"
+                    >
+                        +
+                    </button>
+
+                </article>
+
+
+
+                <article
+                    class="flavor-card"
+                    data-theme="ice"
+                    onclick="selectFlavor('ice')"
+                >
+
+                    <div class="mini-can ice-can">
+
+                        <div>
+                            VOLT<small>X</small>
+                        </div>
+
+                        <span>❄</span>
+
+                        <small>ARCTIC ICE</small>
+
+                    </div>
+
+                    <div class="flavor-info">
+
+                        <span>03</span>
+
+                        <h3>
+                            ARCTIC ICE
+                        </h3>
+
+                        <p>
+                            Fresh. Frozen. Extreme.
+                        </p>
+
+                        <strong>
+                            $3.60
+                        </strong>
+
+                    </div>
+
+                    <button
+                        onclick="event.stopPropagation(); addToCart('VOLT X Arctic Ice', 3.60)"
+                    >
+                        +
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- INSIDE -->
+
+        <section
+            class="inside"
+            id="inside"
+        >
+
+            <div class="inside-content">
+
+                <span class="section-number">
+                    02 / INSIDE
+                </span>
+
+                <h2>
+                    BUILT FOR
+                    <b>MAXIMUM</b>
+                    IMPACT.
+                </h2>
+
+                <p>
+
+                    VOLT X combines caffeine, taurine
+                    and B vitamins in one futuristic formula.
+                    Every can is designed to feel as powerful
+                    as it looks.
+
+                </p>
+
+                <button
+                    class="primary-btn"
+                    onclick="showInside()"
+                >
+                    VIEW FORMULA ⚡
+                </button>
+
+            </div>
+
+
+            <div class="formula">
+
+                <div class="formula-item">
+
+                    <strong>160</strong>
+
+                    <span>MG CAFFEINE</span>
+
+                </div>
+
+                <div class="formula-item">
+
+                    <strong>2000</strong>
+
+                    <span>MG TAURINE</span>
+
+                </div>
+
+                <div class="formula-item">
+
+                    <strong>B6</strong>
+
+                    <span>VITAMIN</span>
+
+                </div>
+
+                <div class="formula-item">
+
+                    <strong>0G</strong>
+
+                    <span>SUGAR*</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- COUNTDOWN -->
+
+        <section class="drop-section">
+
+            <div>
+
+                <span>
+                    NEXT DROP
+                </span>
+
+                <h2>
+                    THE VOLT
+                    <b>DROP.</b>
+                </h2>
+
+            </div>
+
+            <div class="countdown">
+
+                <div>
+                    <strong id="days">03</strong>
+                    <small>DAYS</small>
+                </div>
+
+                <div>
+                    <strong id="hours">12</strong>
+                    <small>HOURS</small>
+                </div>
+
+                <div>
+                    <strong id="minutes">44</strong>
+                    <small>MIN</small>
+                </div>
+
+                <div>
+                    <strong id="seconds">20</strong>
+                    <small>SEC</small>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- CART -->
+
+    <div
+        class="cart-overlay"
+        id="cartOverlay"
+    >
+
+        <aside class="cart-panel">
+
+            <div class="cart-header">
+
+                <div>
+
+                    <span>YOUR</span>
+
+                    <h2>
+                        VOLT CART
+                    </h2>
+
+                </div>
+
+                <button
+                    onclick="closeCart()"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <div
+                class="cart-items"
+                id="cartItems"
+            ></div>
+
+
+            <div class="cart-bottom">
+
+                <div class="cart-total">
+
+                    <span>TOTAL</span>
+
+                    <strong id="cartTotal">
+                        $0.00
+                    </strong>
+
+                </div>
+
+                <button
+                    class="checkout"
+                    onclick="checkout()"
+                >
+                    CHECKOUT
+                    <span>→</span>
+                </button>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+
+
+    <!-- INFO MODAL -->
+
+    <div
+        class="info-modal"
+        id="infoModal"
+    >
+
+        <div class="info-box">
+
+            <button
+                class="close-info"
+                onclick="closeInside()"
+            >
+                ×
+            </button>
+
+            <span>
+                VOLT X FORMULA
+            </span>
+
+            <h2>
+                WHAT'S
+                <b>INSIDE?</b>
+            </h2>
+
+            <div class="modal-list">
+
+                <div>
+                    <b>160 MG</b>
+                    <span>CAFFEINE</span>
+                </div>
+
+                <div>
+                    <b>2000 MG</b>
+                    <span>TAURINE</span>
+                </div>
+
+                <div>
+                    <b>B6 + B12</b>
+                    <span>VITAMINS</span>
+                </div>
+
+                <div>
+                    <b>0 G</b>
+                    <span>SUGAR*</span>
+                </div>
+
+            </div>
+
+            <p>
+                *Demo product information for this website concept.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- TOAST -->
+
+    <div
+        class="toast"
+        id="toast"
+    >
+        ⚡ ADDED TO VOLT CART
+    </div>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="brand">
+            VOLT<span>X</span>
+        </div>
+
+        <p>
+            ENERGY WITHOUT LIMITS.
+        </p>
+
+        <div>
+            © 2026 VOLT X
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
